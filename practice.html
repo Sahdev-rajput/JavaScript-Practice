@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Mere practice</title>
+    </head>
+    <body id="bg">
+        <p id="txt">Color Changing of background in Javascript</p>
+        <b>Colour:</b>
+<input type="color" id="color" onmouseover="clicked()" autofocus/>
+<br><br><br>
+        <button id="me" onmouseover="test()" onmouseout="test1()" onclick="clicked()">Hover your mouse to change color</button>
+        <script>
+            function test()
+            {
+                document.getElementById("txt").style.color="red";
+            }
+            function test1()
+            {
+                document.getElementById("txt").style.color="black";
+                document.getElementById("txt").style.fontWeight="bolder";
+            }
+            // function clicked()
+            // {
+            //     let a=document.getElementById("color").value;
+
+            //     document.getElementById("bg").style.backgroundColor=a;
+            //     // document.getElementById("bg").style.backgroundColor="lightred";
+            // }
+            function clicked()
+            {
+                let a=document.getElementById("color").value;
+
+                document.getElementById("bg").style.backgroundColor=a;
+            }
+
+        </script>
+
+    </body>
+</html>

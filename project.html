@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Javascript Tutorial</title>
+    </head>
+    <style>
+        .txt
+        {
+            margin:auto;
+            background-color: aqua;
+            margin: 5px;
+        }
+        .text
+        {
+            margin:2px;
+            background-color: aqua;
+        }
+        #fun
+        {
+            margin-top: 20px;
+        }
+    </style>
+    <body>
+        <center>
+        <form>
+            <input type="text" id="fun" style="height: 60px; width:140px; border:2px solid black">
+            <br><br>
+            <input type="button" class="text" value="/" onclick="test()">
+        <input type="button" class="text" value="0" onclick="test()">
+        <input type="button" class="text" value="Clear" onclick="test()">
+        <input type="button" class="text" value="=" onclick="test()">
+         <br>
+        <input type="button" class="txt" value="1" onclick="test(1)">
+        <input type="button" class="txt" value="2" onclick="test(2)">
+        <input type="button" class="txt" value="3" onclick="test(3)">
+        <input type="button" class="txt" value="-" onclick="test()">
+
+        <br>
+        <input type="button" class="txt" value="4" onclick="test(4)">
+        <input type="button" class="txt" value="5" onclick="test(5)">
+        <input type="button" class="txt" value="6" onclick="test(6)">
+        <input type="button" class="txt" value="+" onclick="test()">
+
+        <br>
+        <input type="button" class="txt" value="7" onclick="test(7)">
+        <input type="button" class="txt" value="8" onclick="test(8)">
+        <input type="button" class="txt" value="9" onclick="test(9)">
+        <input type="button" class="txt" value="*" onclick="test()">
+
+    </form>
+     </center>
+     <script>
+        var a;
+        function test(a)
+        {
+            // let d=document.getElementsByClassName("txt").value;
+            document.getElementById("fun").innerHTML=a;
+        }
+
+     </script>
+    </body>
+</html>

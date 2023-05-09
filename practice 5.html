@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>PRACTICE 5</title>
+    </head>
+    <body>
+        <div class="firstcontainer">
+            My name is sahdev rajput
+            <div class="container">
+                Welcome to the beautiful world of javascript
+            </div> 
+        </div>
+        <div class="secondcontainer">
+            My name is sahdev rajput
+        </div>
+        <script>
+            function test()
+            {
+               let elemclass=document.getElementsByClassName("firstcontainer");
+               elemclass[0].style.backgroundColor="lightyellow";
+
+            }
+            function test1()
+            {
+               let elemcla=document.getElementsByClassName("secondcontainer");
+               elemcla[0].style.backgroundColor="lightgreen";
+
+            }
+            function fun()
+            {
+                let elem=document.getElementsByTagName("div");
+                elem[1].style.backgroundColor="lightblue";
+            }
+            test();
+            fun();
+            test1();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Practice 4</title>
+    </head>
+    <body>
+        <h1 id="txt">welcome to Javascript Programming</h1>
+        <input type="text" onkeydown="fun2()" onkeyup="fun1()" onload="fun3()" id="name" name="name" style="width:500px ; height:30px">
+        <script>
+            function fun1()
+            {
+                 document.getElementById("name").style.backgroundColor='lightyellow';
+            }
+            function fun2()
+            {
+                document.getElementById("name").style.backgroundColor='lightred';
+
+            }
+            function fun3()
+            {
+                document.getElementById("name").innerHTML="Type someethng here";
+
+            }
+
+        </script>
+    </body>
+</html>
